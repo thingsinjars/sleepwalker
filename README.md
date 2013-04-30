@@ -1,6 +1,8 @@
 The Sleepwalker
 ===
 
+<img src="intro/title.png">
+
 Night, night...
 ---
 
@@ -31,7 +33,13 @@ Technology
 
 This is the first few levels of a game designed around the positional audio available in the Web Audio API. Underneath, it's based on [this Canvas raycasting demo](http://dev.opera.com/articles/view/creating-pseudo-3d-games-with-html-5-can-1/) by [Jacob Seidelin](http://blog.nihilogic.dk/). It was built In June 2012 but then sat around my unfinished folder for about a year before I decided I'd probably never finish it.
 
+At the moment, it only works in Chrome and must be run from a local server. On OS X, navigate to the folder from terminal and run 
+
+    python -m SimpleHTTPServer
+    
+Then you can play the game at `http://localhost:8000/`
+
 License
 ---
 
-To follow...
+http://thingsinjars.mit-license.org/
