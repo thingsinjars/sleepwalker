@@ -1,7 +1,7 @@
 Sleepwalker
 ===
 
-<img src="intro/title.png">
+<a href="http://apps.angryrobotzombie.com/sleepwalker"><img src="intro/title.png"></a>
 
 Night, night...
 ---
@@ -25,7 +25,7 @@ Tock...
 Play
 ---
 
-Put on your headphones and use the arrow keys to walk towards the ticking noise. Walk as close to it as you can to continue to the next level.
+Put on your headphones and use the arrow keys to walk towards the ticking noise. Walk as close to it as you can to continue to the next level. There are only 4 levels and it stops abruptly after the last.
 
 [Demo (Chrome only)](http://apps.angryrobotzombie.com/sleepwalker)
 
