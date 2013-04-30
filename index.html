@@ -171,6 +171,19 @@
 				}
 			}, true);
 		}, 33000);
+		(function(){
+			var files = [
+				'assets/audio/footsteps.wav',
+				'assets/audio/pillow.wav',
+				'assets/audio/river.wav',
+				'assets/audio/pig.wav'
+			];
+			for(var i=0;i<files.length;i++) {
+				var a = document.createElement('audio');
+				a.src=files[i];
+				document.body.appendChild(a);
+			}
+		}());
 	</script>
 </body>
 </html>
