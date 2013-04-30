@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Sleepwalker Game</title>
+	<meta http-equiv="refresh" content="40;URL='game.html'">
+	<link href='http://fonts.googleapis.com/css?family=Cherry+Swash' rel='stylesheet' type='text/css'>
+	<style>
+	html,body {margin:0;padding:0;background:#26252a;width:100%;height:100%;overflow: hidden;}
+	.screen1, .screen2, .screen3, .screen4 {
+		width: 600px;
+		text-align: center;
+		position: absolute;
+		top:0;
+		left:50%;
+		margin-left:-300px;
+	}
+	.screen1 img:nth-child(1) {
+		margin-top: 50%;
+		max-width: 200px;
+		clear: both;
+	}
+	.screen1 img:nth-child(2) {
+		margin-top: 100%;
+		clear: both;
+		display: block;
+		margin: 100% auto 0 auto;
+		-webkit-transform: scale(0.3);
+		-webkit-transition: -webkit-transform 1s linear;
+	}
+	.screen1 {
+		-webkit-animation-name: slideup, fadeout;
+		-webkit-animation-duration: 5s, 3s;
+		-webkit-animation-timing-function: ease-out, linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:5s, 20s;
+		-webkit-animation-fill-mode:forwards;
+	}
+	@-webkit-keyframes slideup {
+		0% {-webkit-transform: translateY(0);}
+		100% {-webkit-transform: translateY(-50%);}
+	}
+	@-webkit-keyframes fadeout {
+		0% {opacity: 1}
+		100% {opacity: 0}
+	}
+	@-webkit-keyframes fadein {
+		0% {opacity: 0}
+		100% {opacity: 1}
+	}
+
+	.screen1 img:nth-child(2) {
+		-webkit-animation-name: fullscale;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:13s;
+		-webkit-animation-fill-mode:forwards;
+	}
+	@-webkit-keyframes fullscale {
+		0% {-webkit-transform: scale(0.3);}
+		100% {-webkit-transform: scale(1);}
+	}
+	.screen2 {
+		-webkit-animation-name: fadein, fadeout;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:20s,25s;
+		-webkit-animation-fill-mode:backwards,forwards;
+	}
+
+	.screen4 {
+		-webkit-animation-name: fadein, fadeout;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:25s, 33s;
+		-webkit-animation-fill-mode:backwards,forwards;
+	}
+	.screen4 .clock {
+		margin-top: 80px;
+	}
+	.screen4 .tick, .screen4 .tick2 {
+		position: absolute;
+		top: 119px;
+		z-index: 100;
+		left: 50%;
+		-webkit-transform: rotate(-0.05turn);
+		margin-left: -240px;
+		-webkit-animation-name: fadein;
+		-webkit-animation-duration: 0.1s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:28s;
+		-webkit-animation-fill-mode:backwards;
+	}
+	.screen4 .tick2 {
+		-webkit-animation-delay:30s;
+		top: 340px;
+	}
+	.screen4 .tock, .screen4 .tock2 {
+		position: absolute;
+		top: 219px;
+		z-index: 100;
+		left: 50%;
+		-webkit-transform: rotate(0.05turn);
+		margin-left: 130px;
+		-webkit-animation-name: fadein;
+		-webkit-animation-duration: 0.1s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:29s;
+		-webkit-animation-fill-mode:backwards;
+	}
+	.screen4 .tock2 {
+		-webkit-animation-delay:31s;
+		top: 440px;
+	}
+	.screen5 {
+		-webkit-animation-name: fadein, fadeout;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-delay:33s, 38s;
+		-webkit-animation-fill-mode:backwards,forwards;
+		color: #FF0;
+		font-size: 3em;
+		text-align: center;
+		margin-top: 25%;
+		padding: 0;
+		font-family: 'Cherry Swash', cursive;
+	}
+
+
+	audio {
+		visibility: hidden;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="screen1">
+		<img src="intro/sleepwalker.png">
+		<img src="intro/house.png">
+	</div>
+	<div class="screen2">
+		<img src="intro/window.png">
+	</div>
+<!-- 	<div class="screen3">
+		<img src="intro/mom.png">
+	</div>
+ -->	<div class="screen4">
+		<img src="intro/clock.png" class="clock">
+		<img src="intro/tick.png" class="tick">
+		<img src="intro/tock.png" class="tock">
+		<img src="intro/tick.png" class="tick2">
+		<img src="intro/tock.png" class="tock2">
+	</div>
+	<div class="screen5">
+		<p>Follow the tick-tock of the clock.</p>
+		<p>Wear headphones. Use the arrow keys.</p>
+	</div>
+	<audio controls looping autoplay>
+		<source src="assets/audio/clock.wav" type="audio/wav">
+	</audio>
+	<script>
+		setTimeout(function() {
+			document.addEventListener('keydown', function(e) {
+				if(e.keyCode >= 37 && e.keyCode <= 40) {
+					document.location.href = 'game.html';
+				}
+			}, true);
+		}, 33000);
+	</script>
+</body>
+</html>
