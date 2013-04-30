@@ -1,4 +1,4 @@
-The Sleepwalker
+Sleepwalker
 ===
 
 <img src="intro/title.png">
@@ -27,6 +27,8 @@ Play
 
 Put on your headphones and use the arrow keys to walk towards the ticking noise. Walk as close to it as you can to continue to the next level.
 
+[Demo (Chrome only)](http://apps.angryrobotzombie.com/sleepwalker)
+
 
 Technology
 ---
@@ -42,4 +44,15 @@ Then you can play the game at `http://localhost:8000/`
 License
 ---
 
-http://thingsinjars.mit-license.org/
+The game concept and design is [MIT licence](http://thingsinjars.mit-license.org/). My usual addendum is that if you use this stuff and make a huge pile of cash from it, I'd appreciate it if you bought me a bigger TV. That'd be nice of you.
+
+A large portion of the code is Jacob Seidelin's under a Creative Commons Attribution, Non Commercial - Share Alike 2.5 license.
+
+### Sounds
+
+From [freesound.org](http://freesound.org) 
+
+  * pigs_breathing.MP3 by oyez -- http://www.freesound.org/people/oyez/sounds/7386/ -- License: Attribution Noncommercial
+  * babbling brook 2.wav by juskiddink -- http://www.freesound.org/people/juskiddink/sounds/60485/ -- License: Attribution
+  * ClockTicksInsideDoorClosed.wav by daveincamas -- http://www.freesound.org/people/daveincamas/sounds/27078/ -- License: Attribution
+  * Footsteps - concrete - OD - B.wav by FreqMan -- http://www.freesound.org/people/FreqMan/sounds/31368/ -- License: Attribution
