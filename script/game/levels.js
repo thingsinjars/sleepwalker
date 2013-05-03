@@ -198,7 +198,7 @@ var players = [
 		speed : 0,		// is the playing moving forward (speed = 1) or backwards (speed = -1).
 		moveSpeed : 0.10,	// how far (in map units) does the player move each step/update
 		rotSpeed : 3,		// how much does the player rotate each step/update (in degrees)
-		audioFile : 'assets/audio/step.wav'		// Noises made by the player (Footsteps)
+		audioFile : 'assets/audio/step.ogg'		// Noises made by the player (Footsteps)
 	},
 	{//Level 1
 		x : 10.5,		// current x, y position
@@ -210,7 +210,7 @@ var players = [
 		speed : 0,		// is the playing moving forward (speed = 1) or backwards (speed = -1).
 		moveSpeed : 0.10,	// how far (in map units) does the player move each step/update
 		rotSpeed : 3,		// how much does the player rotate each step/update (in degrees)
-		audioFile : 'assets/audio/step.wav'		// Noises made by the player (Footsteps)
+		audioFile : 'assets/audio/step.ogg'		// Noises made by the player (Footsteps)
 	},
 	{//Level 2
 		x : 1.5,		// current x, y position
@@ -222,7 +222,7 @@ var players = [
 		speed : 0,		// is the playing moving forward (speed = 1) or backwards (speed = -1).
 		moveSpeed : 0.10,	// how far (in map units) does the player move each step/update
 		rotSpeed : 3,		// how much does the player rotate each step/update (in degrees)
-		audioFile : 'assets/audio/step.wav'		// Noises made by the player (Footsteps)
+		audioFile : 'assets/audio/step.ogg'		// Noises made by the player (Footsteps)
 	},
 	{//Level 3
 		x : 3.5,		// current x, y position
@@ -234,7 +234,7 @@ var players = [
 		speed : 0,		// is the playing moving forward (speed = 1) or backwards (speed = -1).
 		moveSpeed : 0.10,	// how far (in map units) does the player move each step/update
 		rotSpeed : 3,		// how much does the player rotate each step/update (in degrees)
-		audioFile : 'assets/audio/step.wav'		// Noises made by the player (Footsteps)
+		audioFile : 'assets/audio/step.ogg'		// Noises made by the player (Footsteps)
 	},
 	{//Level 4
 		x : 3.5,		// current x, y position
@@ -246,7 +246,7 @@ var players = [
 		speed : 0,		// is the playing moving forward (speed = 1) or backwards (speed = -1).
 		moveSpeed : 0.10,	// how far (in map units) does the player move each step/update
 		rotSpeed : 3,		// how much does the player rotate each step/update (in degrees)
-		audioFile : 'assets/audio/step.wav'		// Noises made by the player (Footsteps)
+		audioFile : 'assets/audio/step.ogg'		// Noises made by the player (Footsteps)
 	}
 	
 ];

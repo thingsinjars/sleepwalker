@@ -160,8 +160,8 @@
 		<p>Follow the tick-tock of the clock.</p>
 		<p>Wear headphones. Use the arrow keys.</p>
 	</div>
-	<audio controls looping autoplay>
-		<source src="assets/audio/clock.wav" type="audio/wav">
+	<audio controls loop autoplay>
+		<source src="assets/audio/clock.ogg" type="audio/wav">
 	</audio>
 	<script>
 		setTimeout(function() {
@@ -173,10 +173,10 @@
 		}, 33000);
 		(function(){
 			var files = [
-				'assets/audio/footsteps.wav',
+				'assets/audio/footsteps.ogg',
 				'assets/audio/pillow.wav',
-				'assets/audio/river.wav',
-				'assets/audio/pig.wav'
+				'assets/audio/river.ogg',
+				'assets/audio/pig.ogg'
 			];
 			for(var i=0;i<files.length;i++) {
 				var a = document.createElement('audio');
